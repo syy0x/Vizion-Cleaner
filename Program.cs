@@ -17,10 +17,10 @@ class Program
         ConsoleColor originalColor = Console.ForegroundColor;
         Console.ForegroundColor = ConsoleColor.Cyan;
 
-        AnimateStep("[1/4] Connection to server");
+        AnimateStep("[1/4] Server connection");
         AnimateStep("[2/4] Authentification");
         AnimateStep("[3/4] Authentification reussite");
-        AnimateStep("[4/4] Lancement de Vizion cleaner");
+        AnimateStep("[4/4] Launching Vizion cleaner");
 
         Console.ForegroundColor = originalColor;
 
@@ -34,27 +34,27 @@ class Program
             switch (choice)
             {
                 case 1:
-                    Console.WriteLine("\nMenu du nettoyage d'ordinateur sélectionné.");
+                    Console.WriteLine("\nSelected computer cleaning menu.");
                     Cleaning.PerformComputerCleanup();
                     break;
                 case 2:
-                    Console.WriteLine("\nRejoindre le Discord sélectionné.");
+                    Console.WriteLine("\nJoin the selected Discord.");
                     OpenDiscordLink();
                     break;
                 case 3:
-                    Console.WriteLine("\nQuitter Vizion Cleaner sélectionné.");
+                    Console.WriteLine("\nExit Vizion Cleaner selected.");
                     Environment.Exit(0);
                     break;
                 default:
                     Console.ForegroundColor = ConsoleColor.Red;
-                    Console.WriteLine("\nOption invalide.");
+                    Console.WriteLine("\nInvalid option.");
                     Console.ResetColor();
                     break;
             }
         } while (choice != 3);
 
         Console.ForegroundColor = ConsoleColor.Green;
-        Console.WriteLine("Tâche terminée. Appuyez sur une touche pour quitter.");
+        Console.WriteLine("Task completed. Press any key to exit.");
         Console.ResetColor();
         Console.ReadKey();
     }
@@ -100,29 +100,29 @@ class Program
         Console.ResetColor();
 
         Console.ForegroundColor = ConsoleColor.Red;
-        Console.WriteLine("\nVizion Cleaner - Menu de choix :");
+        Console.WriteLine("\nVizion Cleaner - Choice menu :");
         Console.ResetColor();
 
         Console.ForegroundColor = ConsoleColor.Red;
         Console.Write("[1]");
         Console.ResetColor();
 
-        Console.WriteLine(" Menu du nettoyage d'ordinateur");
+        Console.WriteLine(" Computer cleaning menu");
 
         Console.ForegroundColor = ConsoleColor.Red;
         Console.Write("[2]");
         Console.ResetColor();
 
-        Console.WriteLine(" Rejoindre le Discord");
+        Console.WriteLine(" Join the Discord");
 
         Console.ForegroundColor = ConsoleColor.Red;
         Console.Write("[3]");
         Console.ResetColor();
 
-        Console.WriteLine(" Quitter Vizion Cleaner\n");
+        Console.WriteLine(" Exit Vizion Cleaner\n");
 
         Console.ForegroundColor = ConsoleColor.Yellow;
-        Console.Write("Choisissez une option : ");
+        Console.Write("Choose an option : ");
         Console.ResetColor();
 
         char choice = Console.ReadKey().KeyChar;
@@ -159,7 +159,7 @@ class Program
         catch (Exception ex)
         {
             Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine("Erreur lors du redémarrage avec des privilèges d'administrateur : " + ex.Message);
+            Console.WriteLine("Reboot error with administrator privileges : " + ex.Message);
             Console.ResetColor();
         }
 
@@ -175,7 +175,7 @@ class Program
         catch (Exception ex)
         {
             Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine("Erreur lors de l'ouverture du lien Discord : " + ex.Message);
+            Console.WriteLine("Error opening Discord link : " + ex.Message);
             Console.ResetColor();
         }
     }
