@@ -1,0 +1,12 @@
+C:\Users\Rubenn\Desktop\Vizion Cleaner\obj\Debug\Vizion Cleaner.csproj.AssemblyReference.cache
+C:\Users\Rubenn\Desktop\Vizion Cleaner\obj\Debug\Vizion Cleaner.csproj.CoreCompileInputs.cache
+C:\Users\Rubenn\Desktop\Vizion Cleaner\bin\Debug\VizionCleaner.exe.config
+C:\Users\Rubenn\Desktop\Vizion Cleaner\bin\Debug\VizionCleaner.exe.manifest
+C:\Users\Rubenn\Desktop\Vizion Cleaner\bin\Debug\VizionCleaner.application
+C:\Users\Rubenn\Desktop\Vizion Cleaner\bin\Debug\VizionCleaner.exe
+C:\Users\Rubenn\Desktop\Vizion Cleaner\bin\Debug\VizionCleaner.pdb
+C:\Users\Rubenn\Desktop\Vizion Cleaner\obj\Debug\VizionCleaner.TrustInfo.xml
+C:\Users\Rubenn\Desktop\Vizion Cleaner\obj\Debug\VizionCleaner.exe.manifest
+C:\Users\Rubenn\Desktop\Vizion Cleaner\obj\Debug\VizionCleaner.application
+C:\Users\Rubenn\Desktop\Vizion Cleaner\obj\Debug\VizionCleaner.exe
+C:\Users\Rubenn\Desktop\Vizion Cleaner\obj\Debug\VizionCleaner.pdb
