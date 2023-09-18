@@ -1,4 +1,4 @@
-# VizionCleaner
+# Vizion-Cleaner
 Free and Open Source cleaning software!
 
 ## Overview 🔎
