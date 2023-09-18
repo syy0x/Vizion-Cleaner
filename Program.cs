@@ -19,7 +19,7 @@ class Program
 
         AnimateStep("[1/4] Server connection");
         AnimateStep("[2/4] Authentification");
-        AnimateStep("[3/4] Authentification reussite");
+        AnimateStep("[3/4] Authentication success");
         AnimateStep("[4/4] Launching Vizion cleaner");
 
         Console.ForegroundColor = originalColor;
