@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Diagnostics;
 using System.IO;
 using System.Threading;
@@ -44,19 +44,19 @@ public static class Cleaning
             Console.Write("[2]");
             Console.ResetColor();
 
-            Console.WriteLine(" Empty folder in C:\Windows\Temp");
+            Console.WriteLine(" Empty folder in Temp");
 
             Console.ForegroundColor = ConsoleColor.Red;
             Console.Write("[3]");
             Console.ResetColor();
 
-            Console.WriteLine(" Empty folder in C:\Windows\Prefetch");
+            Console.WriteLine(" Empty folder in Prefetch");
 
             Console.ForegroundColor = ConsoleColor.Red;
             Console.Write("[4]");
             Console.ResetColor();
 
-            Console.WriteLine(" Delete files in C:\Windows\SoftwareDistribution\Download");
+            Console.WriteLine(" Delete files in SoftwareDistribution/Download");
 
             Console.ForegroundColor = ConsoleColor.Red;
             Console.Write("[5]");
@@ -252,13 +252,13 @@ public static class Cleaning
             }
 
             Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine("\nThe SoftwareDistribution\Download folder has been successfully emptied.");
+            Console.WriteLine("\nThe SoftwareDistribution/Download folder has been successfully emptied.");
             Console.ResetColor();
         }
         catch (Exception ex)
         {
             Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine($"\nError deleting SoftwareDistribution\Download folder : {ex.Message}");
+            Console.WriteLine($"\nError deleting SoftwareDistribution/Download folder : {ex.Message}");
             Console.ResetColor();
         }
 
