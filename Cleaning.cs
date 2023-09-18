@@ -31,65 +31,65 @@ public static class Cleaning
             Console.ResetColor();
 
             Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine("\nVizion Cleaner - Menu du nettoyage d'ordinateur :");
+            Console.WriteLine("\nVizion Cleaner - Computer cleaning menu :");
             Console.ResetColor();
 
             Console.ForegroundColor = ConsoleColor.Red;
             Console.Write("[1]");
             Console.ResetColor();
 
-            Console.WriteLine(" Vider la corbeille");
+            Console.WriteLine(" Empty trash");
 
             Console.ForegroundColor = ConsoleColor.Red;
             Console.Write("[2]");
             Console.ResetColor();
 
-            Console.WriteLine(" Vider le dossier dans C:\\Windows\\Temp");
+            Console.WriteLine(" Empty folder in C:\Windows\Temp");
 
             Console.ForegroundColor = ConsoleColor.Red;
             Console.Write("[3]");
             Console.ResetColor();
 
-            Console.WriteLine(" Vider le dossier dans C:\\Windows\\Prefetch");
+            Console.WriteLine(" Empty folder in C:\Windows\Prefetch");
 
             Console.ForegroundColor = ConsoleColor.Red;
             Console.Write("[4]");
             Console.ResetColor();
 
-            Console.WriteLine(" Supprimer les fichiers dans C:\\Windows\\SoftwareDistribution\\Download");
+            Console.WriteLine(" Delete files in C:\Windows\SoftwareDistribution\Download");
 
             Console.ForegroundColor = ConsoleColor.Red;
             Console.Write("[5]");
             Console.ResetColor();
 
-            Console.WriteLine(" Ouvrir l'outil de nettoyage de disque");
+            Console.WriteLine(" Open the disk cleaning tool");
 
             Console.ForegroundColor = ConsoleColor.Red;
             Console.Write("[6]");
             Console.ResetColor();
 
-            Console.WriteLine(" Défragmenter le disque C");
+            Console.WriteLine(" Defragment disk C");
 
             Console.ForegroundColor = ConsoleColor.Red;
             Console.Write("[7]");
             Console.ResetColor();
 
-            Console.WriteLine(" Nettoyer et supprimer les fichiers temporaires de Windows (A utiliser en dernier)");
+            Console.WriteLine(" Clean and delete Windows temporary files (Use last)");
 
             Console.ForegroundColor = ConsoleColor.Red;
             Console.Write("[8]");
             Console.ResetColor();
 
-            Console.WriteLine(" Nettoyer le cache DNS");
+            Console.WriteLine(" Cleaning the DNS cache");
 
             Console.ForegroundColor = ConsoleColor.Red;
             Console.Write("[9]");
             Console.ResetColor();
 
-            Console.WriteLine(" Retour au menu principal\n");
+            Console.WriteLine(" Back to main menu\n");
 
             Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.Write("Choisissez une option : ");
+            Console.Write("Choose an option : ");
             Console.ResetColor();
             char choice = Console.ReadKey().KeyChar;
 
@@ -123,7 +123,7 @@ public static class Cleaning
                     return;
                 default:
                     Console.ForegroundColor = ConsoleColor.Red;
-                    Console.WriteLine("\nOption invalide.");
+                    Console.WriteLine("\nInvalid option.");
                     Console.ResetColor();
                     break;
             }
@@ -154,18 +154,18 @@ public static class Cleaning
 
             process.WaitForExit();
             Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine("\nLa corbeille a été vidée avec succès.");
+            Console.WriteLine("\nThe trash can has been successfully emptied.");
             Console.ResetColor();
         }
         catch (Exception ex)
         {
             Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine("\nErreur lors de la suppression de la corbeille : " + ex.Message);
+            Console.WriteLine("\nError when deleting the Recycle Bin : " + ex.Message);
             Console.ResetColor();
         }
 
         Console.ForegroundColor = ConsoleColor.Red;
-        Console.WriteLine("Appuyez sur une touche pour continuer.");
+        Console.WriteLine("Press a key to continue.");
         Console.ResetColor();
         Console.ReadKey();
     }
@@ -189,18 +189,18 @@ public static class Cleaning
             }
 
             Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine("\nLe dossier Temp a été vidé avec succès.");
+            Console.WriteLine("\nTemp file successfully emptied.");
             Console.ResetColor();
         }
         catch (Exception ex)
         {
             Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine($"\nErreur lors de la suppression du dossier Temp : {ex.Message}");
+            Console.WriteLine($"\nError deleting Temp folder : {ex.Message}");
             Console.ResetColor();
         }
 
         Console.ForegroundColor = ConsoleColor.Red;
-        Console.WriteLine("Appuyez sur une touche pour continuer.");
+        Console.WriteLine("Press a key to continue.");
         Console.ResetColor();
         Console.ReadKey();
     }
@@ -217,18 +217,18 @@ public static class Cleaning
             }
 
             Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine("\nLe dossier Prefetch a été vidé avec succès.");
+            Console.WriteLine("\nThe Prefetch file has been successfully emptied.");
             Console.ResetColor();
         }
         catch (Exception ex)
         {
             Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine($"\nErreur lors de la suppression du dossier Prefetch : {ex.Message}");
+            Console.WriteLine($"\nError deleting Prefetch folder : {ex.Message}");
             Console.ResetColor();
         }
 
         Console.ForegroundColor = ConsoleColor.Red;
-        Console.WriteLine("Appuyez sur une touche pour continuer.");
+        Console.WriteLine("Press a key to continue.");
         Console.ResetColor();
         Console.ReadKey();
     }
@@ -252,18 +252,18 @@ public static class Cleaning
             }
 
             Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine("\nLe dossier SoftwareDistribution\\Download a été vidé avec succès.");
+            Console.WriteLine("\nThe SoftwareDistribution\Download folder has been successfully emptied.");
             Console.ResetColor();
         }
         catch (Exception ex)
         {
             Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine($"\nErreur lors de la suppression du dossier SoftwareDistribution\\Download : {ex.Message}");
+            Console.WriteLine($"\nError deleting SoftwareDistribution\Download folder : {ex.Message}");
             Console.ResetColor();
         }
 
         Console.ForegroundColor = ConsoleColor.Red;
-        Console.WriteLine("Appuyez sur une touche pour continuer.");
+        Console.WriteLine("Press a key to continue.");
         Console.ResetColor();
         Console.ReadKey();
     }
@@ -274,18 +274,18 @@ public static class Cleaning
         {
             Process.Start("cleanmgr", "/sagerun:65535");
             Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine($"\nOuverture de l'outil de nettoyage de disque en cours...");
+            Console.WriteLine($"\nOpening the current disk cleaning tool...");
             Console.ResetColor();
         }
         catch (Exception ex)
         {
             Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine($"\nErreur lors de l'ouverture de l'outil de nettoyage de disque : {ex.Message}");
+            Console.WriteLine($"\nError opening disk cleaning tool : {ex.Message}");
             Console.ResetColor();
         }
 
         Console.ForegroundColor = ConsoleColor.Red;
-        Console.WriteLine("Appuyez sur une touche pour continuer.");
+        Console.WriteLine("Press a key to continue.");
         Console.ResetColor();
         Console.ReadKey();
     }
@@ -296,18 +296,18 @@ public static class Cleaning
         {
             Process.Start("cmd.exe", "/c chkdsk C: /F /R");
             Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine($"\nExécution de chkdsk C: /F /R en cours...");
+            Console.WriteLine($"\nExecution of chkdsk C: /F /R in progress...");
             Console.ResetColor();
         }
         catch (Exception ex)
         {
             Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine($"\nErreur lors de l'exécution de chkdsk C: /F /R : {ex.Message}");
+            Console.WriteLine($"\nError running chkdsk C: /F /R : {ex.Message}");
             Console.ResetColor();
         }
 
         Console.ForegroundColor = ConsoleColor.Red;
-        Console.WriteLine("Appuyez sur une touche pour continuer.");
+        Console.WriteLine("Press a key to continue.");
         Console.ResetColor();
         Console.ReadKey();
     }
@@ -318,18 +318,18 @@ public static class Cleaning
         {
             Process.Start("cmd.exe", $"/c defrag {driveLetter}: /U /V");
             Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine($"\nExécution de la défragmentation de {driveLetter} en cours...");
+            Console.WriteLine($"\nRunning {driveLetter} defragmentation...");
             Console.ResetColor();
         }
         catch (Exception ex)
         {
             Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine($"\nErreur lors de l'exécution de la défragmentation de {driveLetter} : {ex.Message}");
+            Console.WriteLine($"\nError executing {driveLetter} defragmentation. : {ex.Message}");
             Console.ResetColor();
         }
 
         Console.ForegroundColor = ConsoleColor.Red;
-        Console.WriteLine("Appuyez sur une touche pour continuer.");
+        Console.WriteLine("Press a key to continue.");
         Console.ResetColor();
         Console.ReadKey();
     }
@@ -340,18 +340,18 @@ public static class Cleaning
         {
             Process.Start("cmd.exe", "/c ipconfig /flushdns");
             Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine("\nNettoyage du cache DNS en cours...");
+            Console.WriteLine("\nDNS cache cleanup in progress...");
             Console.ResetColor();
         }
         catch (Exception ex)
         {
             Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine($"\nErreur lors du nettoyage du cache DNS : {ex.Message}");
+            Console.WriteLine($"\nDNS cache cleanup error : {ex.Message}");
             Console.ResetColor();
         }
 
         Console.ForegroundColor = ConsoleColor.Red;
-        Console.WriteLine("Appuyez sur une touche pour continuer.");
+        Console.WriteLine("Press a key to continue.");
         Console.ResetColor();
         Console.ReadKey();
     }
